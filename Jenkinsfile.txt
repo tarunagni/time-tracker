@@ -1,6 +1,8 @@
 pipeline {
     agent any
-
+tools {
+  git 'Default'
+}
     stages {
         stage('code') {
             steps {
