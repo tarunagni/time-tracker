@@ -20,7 +20,7 @@ tools {
         stage('Deploy') {
             steps {
 				// shutdown tomcat
-				bat 'D:\\work_dsi\\windows_linux_tomee\\apache-tomee-plus-8.0.5\\bin\\shutdown.bat'
+				bat 'D:\\work_dsi\\Middleware\\windows_&_linux_tomee\\apache-tomee-plus-8.0.5\\bin\\shutdown.bat'
                 // Copy the generated WAR file to Tomcat webapps folder
                 bat 'copy C:\\Users\\TAI8\\AppData\\Local\\Jenkins\\.jenkins\\workspace\\git_test_new\\web\\target\\*.war D:\\work_dsi\\Middleware\\windows_&_linux_tomee\\apache-tomee-plus-8.0.5\\webapps\\'
 				// start tomcat
